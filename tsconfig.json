@@ -3,7 +3,7 @@
     "target": "ESNext",
     "composite": true,
     "useDefineForClassFields": true,
-    "module": "commonjs",
+    "module": "ESNext",
     "moduleResolution": "node",
     "jsx": "preserve",
     "importHelpers": true,
@@ -19,7 +19,8 @@
     "baseUrl": "./",
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "types": ["element-plus/global"]
   },
   "include": ["src/**/*.vue", "src/**/*.ts", "./vite-env.d.ts"],
   "references": []
