@@ -9,4 +9,13 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
+  // build: {
+  //   target: 'es6',
+  //   rollupOptions: {
+  //     output: {
+  //       esModule: false,
+  //       generatedCode: 'es5',
+  //     },
+  //   },
+  // },
 });
