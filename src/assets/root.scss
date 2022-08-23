@@ -1,3 +1,20 @@
 :root {
-  // todo
+  --color-1: #369;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.grid {
+  height: 100%;
+  display: grid;
+  padding: 0.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, minmax(100px, 300px));
+  gap: 10px 20px;
+  & > section {
+    padding: 0.5rem;
+    border: 1px dashed pink;
+  }
 }

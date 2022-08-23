@@ -1,18 +1,19 @@
 <script lang="ts" setup>
-import UserList from '@/components/UserList.vue';
-import { useRoute } from 'vue-router';
-
-const route = useRoute();
+import NavList from '@/components/NavList.vue';
 </script>
 
 <template>
   <div class="home">
-    <section>
-      <h2>home主页</h2>
-      <el-link type="primary">欢迎{{ route.query.username }}登录</el-link>
-      <UserList />
-    </section>
-
-    <router-view></router-view>
+    <NavList />
+    <div class="page-views">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.page-views {
+  padding: 1rem;
+  height: calc(100vh - 66px);
+}
+</style>
