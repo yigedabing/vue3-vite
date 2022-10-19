@@ -12,12 +12,12 @@ export const routerHome: RouteRecordRaw = {
     {
       name: 'UserLst',
       path: '/user-list',
-      component: () => import('../views/sys/UserLst.vue'),
+      component: () => import('@/views/sys/UserLst.vue'),
     },
     {
       name: 'DynamicComponent',
       path: '/dynamic-component',
-      component: () => import('../views/sys/DynamicComponent.vue'),
+      component: () => import('@/views/sys/DynamicComponent.vue'),
     },
   ],
 };
