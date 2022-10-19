@@ -6,7 +6,9 @@ import NavList from '@/views/components/NavList.vue';
   <div class="home">
     <NavList />
     <div class="page-views">
-      <router-view></router-view>
+      <router-view class="default"></router-view>
+      <!-- 命名视图 -->
+      <RouterView class="named" name="namedView"></RouterView>
     </div>
   </div>
 </template>

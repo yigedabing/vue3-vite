@@ -1,5 +1,7 @@
 <template>
-  <div>
+  <div class="user-list">
+    <el-alert type="success">{{ props.userInfo }}</el-alert>
+
     <ElTable :data="tableData">
       <ElTableColumn label="编号" width="100" type="index"> </ElTableColumn>
       <ElTableColumn label="用户ID" prop="id"></ElTableColumn>
@@ -27,7 +29,7 @@
 
 <script lang="ts" setup>
 import { onMounted, ref } from 'vue';
-import { useRoute, useRouter } from 'vue-router';
+import { useRouter } from 'vue-router';
 
 interface IDataItem {
   id: string;
@@ -35,9 +37,12 @@ interface IDataItem {
   age: number;
 }
 
+type TUserInfo = { name: string; age: number; id: string };
+
+const props = defineProps<{ userInfo: TUserInfo }>();
+
 const tableData = ref<IDataItem[]>([]);
 const router = useRouter();
-const route = useRoute();
 
 onMounted(() => {
   for (let i = 0; i < 10; i++) {

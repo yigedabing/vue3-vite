@@ -1,3 +1,3 @@
 <template>
-  <div>dynamic-component</div>
+  <div class="dynamic-component">dynamic-component</div>
 </template>
