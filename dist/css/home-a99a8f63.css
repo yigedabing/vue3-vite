@@ -1,0 +1,1 @@
+nav{padding:1rem;border-bottom:1px solid #ddd;height:60px;display:flex}nav .item+.item{margin-left:10px}nav a{padding:10px;background-color:#ddd}nav .router-link-active{color:#fff;background-color:#409eff}.page-views[data-v-3520faad]{padding:1rem}

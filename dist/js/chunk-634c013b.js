@@ -1,0 +1,1 @@
+import{d as p,a as u,g as e,t as s,u as r,k as c,o as i}from"./app-73cde9c6.js";const d={class:"user-detail"};var y=p({__name:"UserDetail",props:{id:null},setup(t){const o=t,a=c(),n=a.params,l=a.query;return(m,_)=>(i(),u("div",d,[e("h4",null,[e("p",null,"props id: "+s(o.id),1),e("p",null,"params id: "+s(r(n).id),1)]),e("p",null,"query: "+s(r(l)),1)]))}});export{y as default};
