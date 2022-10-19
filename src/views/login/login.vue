@@ -1,5 +1,6 @@
 <template>
   <div class="login">
+    <img src="@/assets/images/thanks.gif" width="60" />
     <el-form
       ref="loginForm"
       label-width="100px"
@@ -51,6 +52,7 @@ const submitForm = () => {
 .login {
   width: 100vw;
   height: 100vh;
+  text-align: center;
 }
 .el-form {
   position: relative;

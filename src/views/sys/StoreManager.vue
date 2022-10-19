@@ -7,8 +7,13 @@
       </el-button>
       <Counter></Counter>
     </section>
-    <section>2</section>
-    <section>3</section>
+    <section>
+      <img src="@/assets/images/18.png" />
+    </section>
+    <section>
+      <img src="@/assets/images/19.svg" width="30" />
+      <img src="@/assets/images/14.png" width="30" />
+    </section>
   </div>
 </template>
 
