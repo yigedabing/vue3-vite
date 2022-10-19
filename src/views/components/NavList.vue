@@ -4,7 +4,7 @@ import { RouterLink, useRoute } from 'vue-router';
 
 const navList = reactive([
   { componentName: 'StoreManager', text: '状态管理' },
-  { componentName: 'UserLst', text: '列表渲染' },
+  { componentName: 'UserList', text: '用户列表' },
   { componentName: 'DynamicComponent', text: '动态组件加载' },
 ]);
 const route = useRoute();

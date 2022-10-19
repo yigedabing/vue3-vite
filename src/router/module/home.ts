@@ -10,9 +10,16 @@ export const routerHome: RouteRecordRaw = {
       component: () => import('@/views/sys/StoreManager.vue'),
     },
     {
-      name: 'UserLst',
+      name: 'UserList',
       path: 'user-list',
-      component: () => import('@/views/sys/UserLst.vue'),
+      component: () => import('@/views/sys/UserList.vue'),
+    },
+    {
+      name: 'UserDetail',
+      path: 'user-detail/:id',
+      component: () => import('@/views/sys/UserDetail.vue'),
+      // 路由组件传参数
+      props: true,
     },
     {
       name: 'DynamicComponent',
