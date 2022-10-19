@@ -35,6 +35,8 @@ const routes: RouteRecordRaw[] = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  strict: true,
+  sensitive: true,
 });
 
 export { router };

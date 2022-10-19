@@ -2,7 +2,7 @@
   <div>store manager</div>
   <div class="grid">
     <section>
-      <el-button @click="countStore.count++">
+      <el-button @click="countStore.increment()">
         Count ++ {{ countStore.count }}
       </el-button>
       <Counter></Counter>
