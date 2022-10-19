@@ -6,17 +6,17 @@ export const routerHome: RouteRecordRaw = {
   children: [
     {
       name: 'StoreManager',
-      path: '/store-manager',
+      path: 'store-manager',
       component: () => import('@/views/sys/StoreManager.vue'),
     },
     {
       name: 'UserLst',
-      path: '/user-list',
+      path: 'user-list',
       component: () => import('@/views/sys/UserLst.vue'),
     },
     {
       name: 'DynamicComponent',
-      path: '/dynamic-component',
+      path: 'dynamic-component',
       component: () => import('@/views/sys/DynamicComponent.vue'),
     },
   ],

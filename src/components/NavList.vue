@@ -1,23 +1,22 @@
 <script lang="ts" setup>
 import { reactive } from 'vue';
-import { useRouter } from 'vue-router';
+import { RouterLink, useRoute } from 'vue-router';
 
 const navList = reactive([
-  { path: '/store-manager', name: '状态管理' },
-  { path: '/use-list', name: '列表渲染' },
-  { path: '/dynamic-component', name: '动态组件加载' },
+  { componentName: 'StoreManager', text: '状态管理' },
+  { componentName: 'UserLst', text: '列表渲染' },
+  { componentName: 'DynamicComponent', text: '动态组件加载' },
 ]);
-const router = useRouter();
-const handleClick = (nav: typeof navList[0]) => {
-  router.push(nav.path);
-};
+const route = useRoute();
 </script>
 
 <template>
   <nav>
-    <el-link v-for="nav in navList" type="primary" @click="handleClick(nav)">
-      {{ nav.name }}
-    </el-link>
+    <div class="item" v-for="nav in navList">
+      <RouterLink :to="{ name: nav.componentName, query: { ...route.query } }">
+        {{ nav.text }}
+      </RouterLink>
+    </div>
   </nav>
 </template>
 
@@ -26,8 +25,19 @@ nav {
   padding: 1rem;
   border-bottom: 1px solid #ddd;
   height: 60px;
-  .el-link + .el-link {
-    margin-left: 10px;
+  display: flex;
+  .item {
+    & + .item {
+      margin-left: 10px;
+    }
+  }
+  a {
+    padding: 10px;
+    background-color: #ddd;
+  }
+  .router-link-active {
+    color: #fff;
+    background-color: #409eff;
   }
 }
 </style>
