@@ -1,1 +1,3 @@
-# 网格布局学习及vue3学习
+# vue3 + typescript + vite 学习
+## node版本
+node 16.16.0
