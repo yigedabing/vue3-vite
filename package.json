@@ -1,7 +1,7 @@
 {
   "name": "grid-vue",
   "version": "1.0.0",
-  "description": "网格布局学习",
+  "description": "vue3学习",
   "scripts": {
     "build": "vite build",
     "dev": "vite --host",
