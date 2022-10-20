@@ -6,10 +6,12 @@
     "build": "vite build",
     "dev": "vite --host",
     "preview": "vite preview",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "element-plus": "^2.2.10",
+    "eslint": "^8.25.0",
     "pinia": "^2.0.20",
     "vue": "^3.2.37",
     "vue-router": "^4.1.2"
