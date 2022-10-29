@@ -25,3 +25,14 @@ li {
 a {
   text-decoration: none;
 }
+#app {
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  font-size: 14px;
+  background: url(./images/2.jpeg) center/cover no-repeat;
+  .root-view {
+    width: inherit;
+    height: inherit;
+  }
+}

@@ -10,7 +10,4 @@ import { onMounted } from 'vue';
 onMounted(() => {
   console.log('== onMounted ===');
 });
-
-let a = 1;
-console.log(a);
 </script>

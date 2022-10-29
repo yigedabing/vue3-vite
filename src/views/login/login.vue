@@ -1,12 +1,8 @@
 <template>
   <div class="login">
-    <img src="@/assets/images/thanks.gif" width="60" />
-    <el-form
-      ref="loginForm"
-      label-width="100px"
-      :model="ruleForm"
-      :rules="rules"
-    >
+    <el-form ref="loginForm" label-width="100px" :model="ruleForm" :rules="rules">
+      <!-- <img class="image_logo" src="@/assets/images/thanks.gif" width="60" /> -->
+      <el-avatar :size="60" fit="fill" :src="imageLogoUrl" />
       <el-form-item label="用户名" prop="username">
         <el-input type="text" v-model="ruleForm.username"></el-input>
       </el-form-item>
@@ -14,15 +10,14 @@
         <el-input type="password" v-model="ruleForm.password"></el-input>
       </el-form-item>
       <el-form-item>
-        <el-button :disabled="disabledLogin" type="primary" @click="submitForm">
-          登陆
-        </el-button>
+        <el-button :disabled="disabledLogin" type="primary" @click="submitForm"> 登陆 </el-button>
       </el-form-item>
     </el-form>
   </div>
 </template>
 
 <script lang="ts" setup>
+import imageLogoUrl from '@/assets/images/thanks.gif';
 import type { FormRules } from 'element-plus';
 import { computed, reactive } from 'vue';
 import { useRouter } from 'vue-router';
@@ -60,5 +55,8 @@ const submitForm = () => {
   margin: 0 auto;
   top: 50%;
   transform: translateY(-50%);
+}
+.image_logo {
+  margin-bottom: 10px;
 }
 </style>

@@ -4,7 +4,6 @@ import NavList from '@/views/components/NavList.vue';
 
 <template>
   <div class="home">
-    <img src="@/assets/images/2.jpeg" width="100" />
     <NavList />
     <div class="page-views">
       <router-view class="default"></router-view>
